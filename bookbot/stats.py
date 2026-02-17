@@ -12,3 +12,19 @@ def char_count(text):
         else:
             char_dict[character] += 1
     return char_dict
+
+def dict_to_list(dictionary):
+    report_list = []
+    for key in dictionary:
+        num = dictionary[key]
+        loop_dict = {
+            "char" : key,
+            "num" : num,
+        }
+        report_list.append(loop_dict)
+    report_list.sort(reverse=True, key=sort_on)
+    return report_list
+
+def sort_on(dict_list):
+    return dict_list["num"]
+    
