@@ -12,8 +12,3 @@ def char_count(text):
         else:
             char_dict[character] += 1
     return char_dict
-
-def sort(char_dict):
-    sorted_dict = char_dict.sort()
-    print(f"sorted dictionary is {sorted_dict}")
-    return sorted_dict
